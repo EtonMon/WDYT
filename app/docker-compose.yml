@@ -24,5 +24,7 @@ web:
     - exp:exp-api
   volumes:
     - ./web/:/app
+  ports:
+    - "8000:8000"
   command: bash /app/scripts/startup.sh
 
